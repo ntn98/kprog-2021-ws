@@ -45,8 +45,8 @@ dependencies {
 }
 
 checkstyle {
-    toolVersion = "8.36"
-    configFile = file('etc/google_checks.xml')
+    toolVersion = "8.41.1"
+    configFile = file('etc/google-checks-2021.xml')
     showViolations = false
     checkstyleTest.enabled = false
 }
