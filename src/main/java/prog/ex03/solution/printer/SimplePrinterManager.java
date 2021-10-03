@@ -1,13 +1,15 @@
 package prog.ex03.solution.printer;
 
+import java.util.List;
 import prog.ex03.exercise.printer.Printer;
 import prog.ex03.exercise.printer.PrinterManager;
 import prog.ex03.exercise.printer.exceptions.PrinterAlreadyRegisteredException;
 import prog.ex03.exercise.printer.exceptions.PrinterNotRegisteredException;
 
-import java.util.List;
 
-
+/**
+ * Implements the PrinterManager in a simple and straightforward way.
+ */
 public class SimplePrinterManager implements PrinterManager {
 
   @Override

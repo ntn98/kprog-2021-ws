@@ -1,9 +1,8 @@
 package prog.ex03.exercise.printer;
 
+import java.util.List;
 import prog.ex03.exercise.printer.exceptions.PrinterAlreadyRegisteredException;
 import prog.ex03.exercise.printer.exceptions.PrinterNotRegisteredException;
-
-import java.util.List;
 
 /**
  * Interface to a PrinterManager to manage a set of printers on a computer.

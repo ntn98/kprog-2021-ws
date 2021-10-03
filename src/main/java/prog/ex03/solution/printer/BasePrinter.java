@@ -6,6 +6,9 @@ import prog.ex03.exercise.printer.exceptions.NoColorPrinterException;
 import prog.ex03.exercise.printer.exceptions.NoDuplexPrinterException;
 import prog.ex03.exercise.printer.exceptions.NotEnoughPaperException;
 
+/**
+ * Abstract class for BwPrinter and ColorPrinter.
+ */
 public abstract class BasePrinter implements Printer {
 
   @Override
