@@ -12,7 +12,9 @@ public interface PrinterManager {
    * returns a printer with the given name.
    *
    * @param name name of the requested printer.
-   * @return Printer with the given name, otherwise null.
+   * @return Printer with the given name
+   * @throws IllegalArgumentException if the name is not a readable string or a null reference
+   * @throws PrinterNotRegisteredException if no printer is registered under the given name
    */
   Printer getPrinter(String name) throws IllegalArgumentException, PrinterNotRegisteredException;
 
