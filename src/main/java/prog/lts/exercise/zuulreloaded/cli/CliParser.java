@@ -4,9 +4,10 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 import prog.lts.exercise.zuulreloaded.Command;
+import prog.lts.exercise.zuulreloaded.CommandWord;
+import prog.lts.exercise.zuulreloaded.InvalidCommandException;
 import prog.lts.exercise.zuulreloaded.Parser;
 import prog.lts.exercise.zuulreloaded.Renderer;
-
 
 /**
  * Parser to control the game using the command line interface.
@@ -24,7 +25,7 @@ public class CliParser implements Parser {
   }
 
   @Override
-  public Command getCommand() {
+  public Command getCommand() throws InvalidCommandException {
     String inputLine = "";   // will hold the full input line
     String word1;
     String word2;
@@ -55,9 +56,10 @@ public class CliParser implements Parser {
     // note: we just ignore the rest of the input line.
 
     Command command = commandWords.get(word1);
-    if (command != null) {
-      command.setSecondWord(word2);
+    if (command == null) {
+      throw new InvalidCommandException(CommandWord.UNKNOWN, "The command is not known: " + word1);
     }
+    command.setSecondWord(word2);
     return command;
   }
 

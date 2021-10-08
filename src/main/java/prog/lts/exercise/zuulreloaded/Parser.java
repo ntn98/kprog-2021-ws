@@ -11,7 +11,7 @@ public interface Parser {
    *
    * @return command of the user
    */
-  Command getCommand();
+  Command getCommand() throws InvalidCommandException;
 
   /**
    * Returns a string listing all valid commands in alphabetical order.
