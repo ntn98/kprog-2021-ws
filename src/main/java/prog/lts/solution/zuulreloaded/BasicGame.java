@@ -3,6 +3,7 @@ package prog.lts.solution.zuulreloaded;
 import prog.lts.exercise.zuulreloaded.Game;
 import prog.lts.exercise.zuulreloaded.GameState;
 import prog.lts.exercise.zuulreloaded.Parser;
+import prog.lts.exercise.zuulreloaded.Player;
 import prog.lts.exercise.zuulreloaded.Renderer;
 import prog.lts.exercise.zuulreloaded.Scenario;
 
@@ -31,6 +32,11 @@ public class BasicGame implements Game {
 
   @Override
   public GameState getGameState() {
+    return null;
+  }
+
+  @Override
+  public Player getPlayer() {
     return null;
   }
 }

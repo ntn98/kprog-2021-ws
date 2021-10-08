@@ -37,4 +37,11 @@ public interface Game {
    * @return state of the game
    */
   GameState getGameState();
+
+  /**
+   * Returns the player. This method is for test purposes only.
+   *
+   * @return player of the game
+   */
+  Player getPlayer();
 }
