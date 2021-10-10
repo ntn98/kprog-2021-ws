@@ -17,7 +17,7 @@ public interface Game {
    * @throws IllegalArgumentException if the scenario has not startingRoom.
    */
   void configureGame(Scenario scenario, Parser parser, Renderer renderer)
-          throws IllegalArgumentException;
+          throws IllegalArgumentException, NullPointerException;
 
   /**
    * Starts the game.
